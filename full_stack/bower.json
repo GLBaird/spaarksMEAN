@@ -1,0 +1,23 @@
+{
+  "name": "full_stack",
+  "description": "A simple demo of a MEAN app",
+  "main": "server.js",
+  "authors": [
+    "Leon Baird <leonbaird@mac.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GLBaird/spaarksMEAN",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5"
+  }
+}
