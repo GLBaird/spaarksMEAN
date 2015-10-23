@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MeanContacts">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>MEAN Contacts</title>
+
+    <!-- TODO: replace with CDN versions of Bootstap and Angular -->
+    <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="/bower/angular/angular.js"></script>
 </head>
 <body>
 
+    <header class="navbar navbar-default">
+        <h1 class="container"><i class="glyphicon glyphicon-user"></i> M.E.A.N. Contacts</h1>
+    </header>
+
+    <main class="container">
+        
+        <table class="table table-striped" ng-controller="ListController">
+        	<thead>
+        		<tr>
+        			<th>Name</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Options</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+                <tr>
+                    <td><input ng-model="new.name" placeholder="Enter name" class="form-control"></td>
+                    <td><input ng-model="new.email" placeholder="Enter email" class="form-control"></td>
+                    <td><input ng-model="new.number" placeholder="Enter number" class="form-control"></td>
+                    <td>
+                        <button ng-click="add()" ng-hide="editMode" class="btn btn-success btn-sm glyphicon glyphicon-plus" title="Add Contact"></button>
+                        <button ng-click="save()" ng-show="editMode" class="btn btn-success btn-sm glyphicon glyphicon-ok" title="Delete Contact"></button>
+                        <button ng-click="cancelSave()" ng-show="editMode" class="btn btn-danger btn-sm glyphicon glyphicon-remove" title="Delete Contact"></button>
+                    </td>
+                </tr>
+                <tr class="error" ng-show="error">
+                    <td colspan="4">{{error}}</td>
+                </tr>
+        		<tr ng-repeat="contact in contacts">
+        			<td>{{contact.name}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.number}}</td>
+                    <td>
+                        <button ng-click="edit(contact)" class="btn btn-primary btn-sm glyphicon glyphicon-pencil" title="Edit Contact"></button>
+                        <button ng-click="remove(contact._id)" class="btn btn-danger btn-sm glyphicon glyphicon-remove" title="Delete Contact"></button>
+                    </td>
+        		</tr>
+        	</tbody>
+        </table>
+        
+    </main>
+    <script src="js/app.js"></script>
 </body>
 </html>

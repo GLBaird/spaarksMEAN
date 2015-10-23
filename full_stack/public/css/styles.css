@@ -1,0 +1,10 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translate(-150%, 0)}
+    100% { opacity: 1; transform: none}
+}
+
+.error {
+    background: #ffc7ca !important;
+    color: red;
+    animation: fadeIn 1s;
+}
