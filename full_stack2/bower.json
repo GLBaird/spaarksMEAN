@@ -1,0 +1,24 @@
+{
+  "name": "fullstack2",
+  "description": "A simple demo of MEAN Stack App",
+  "main": "server.js",
+  "authors": [
+    "Leon Baird <leonbaird@mac.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "angular-resource": "~1.4.7"
+  }
+}

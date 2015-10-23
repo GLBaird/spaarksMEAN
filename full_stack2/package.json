@@ -1,0 +1,20 @@
+{
+  "name": "fullstack2",
+  "version": "1.0.0",
+  "description": "A simple demo of MEAN Stack App",
+  "main": "server.js",
+  "scripts": {
+    "db": "mongod --dbpath ./db",
+    "prestart": "bower install && npm install",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon Baird <leonbaird@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.1",
+    "node-restful": "^0.2.2"
+  }
+}
