@@ -1,11 +1,11 @@
 {
   "name": "angular_git",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple demo of Angular",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Leon Baird",
+  "author": "Leon Baird <leonbaird@mac.com>",
   "license": "MIT",
   "devDependencies": {
     "browserify": "^11.2.0",
@@ -21,9 +21,16 @@
     "karma": "^0.13.11",
     "karma-browserify": "^4.4.0",
     "karma-chrome-launcher": "^0.2.1",
-    "karma-jasmine": "^0.3.6",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
     "karma-safari-launcher": "^0.1.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-mocks": "^1.4.7",
+    "angular-resource": "^1.4.7",
+    "angular-route": "^1.4.7"
   }
 }
