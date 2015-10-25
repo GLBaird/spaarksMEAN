@@ -1,0 +1,20 @@
+
+// server side
+
+install Node.js
+install MongoDB (brew install mongodb)
+    create Environment Variable (PC) or pico ~/.bash_profile
+
+mongod --dbpath ./db   (launch MongoDB)
+
+// client side
+
+sudo npm install -g browserify
+sudo npm install -g gulp
+
+// unit testing with karma-jasmine
+sudo npm install -g karma
+sudo npm install -g karma-cli
+
+// unit testing with mocha (node)
+sudo npm install -g mocha

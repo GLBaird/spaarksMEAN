@@ -1,0 +1,68 @@
+body {
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: large;
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 1em 10%;
+}
+
+header h1, header h2 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+main header {
+    padding: 0.5em 1em;
+}
+
+main header h2 {
+    font-size: 1em;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 2px 2px #999;
+    -moz-box-shadow: 0 2px 2px #999;
+    box-shadow: 0 2px 2px #999;
+}
+
+nav {
+    background: white;
+    padding: 0 10%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+    color: #444;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #e4e8ff;
+}
+
+main {
+    position: absolute;
+    top: 7em;
+    left: 10%;
+    right: 10%;
+    bottom: 1em;
+    background-color: #f8f9ff;
+    -webkit-box-shadow: inset 2px 2px 2px #DDD;
+    -moz-box-shadow: inset 2px 2px 2px #DDD;
+    box-shadow: inset 2px 2px 2px #DDD;
+}
+
+main p {
+    margin: 1em;
+}
